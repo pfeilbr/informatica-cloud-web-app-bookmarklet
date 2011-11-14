@@ -23,10 +23,12 @@
     
     var sel = document.getElementById('InfPageSz');
     if (sel) {
+        var pageSizeValue = '999';
         var opt = document.createElement('option');
-        opt.setAttribute('value', '999');
-        opt.appendChild(document.createTextNode('999'));
+        opt.setAttribute('value', pageSizeValue);
+        opt.appendChild(document.createTextNode(pageSizeValue));
         sel.appendChild(opt);
+        sel.value = pageSizeValue;
         pnPages.onchangeSize('showDSSTasksPage');
     }
 })();
