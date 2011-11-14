@@ -27,5 +27,6 @@
         opt.setAttribute('value', '999');
         opt.appendChild(document.createTextNode('999'));
         sel.appendChild(opt);
+        pnPages.onchangeSize('showDSSTasksPage');
     }
 })();
